@@ -1,0 +1,12 @@
+/* === External CSS for rest of the page === */
+
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+}

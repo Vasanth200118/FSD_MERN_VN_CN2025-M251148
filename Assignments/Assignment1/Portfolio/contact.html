@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Vasanth Kumar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Vasanth<span class="dot">.</span></a>
+      <nav class="main-nav" id="mainNavContact">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-controls="mainNavContact" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero container">
+      <h1>Contact Me</h1>
+      <p>Have a question or want to collaborate? Send a message — I'll reply soon.</p>
+    </section>
+
+    <section class="contact-form container">
+      <form action="#" method="post" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="emailAddr">Email Address</label>
+            <input id="emailAddr" name="emailAddr" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="+91 9XXXXXXXXX">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Subject" required>
+          </div>
+          <div class="form-group full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+          </div>
+        </div>
+        <p><button class="btn" type="submit">Send Message</button></p>
+      </form>
+
+      <aside class="contact-info">
+        <h2>Contact Info</h2>
+        <p><strong>Email:</strong> <a href="mailto:vasanth@example.com">vasanth@example.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+919XXXXXXXXX">+91 9XXXXXXXXX</a></p>
+        <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
+
+        <h3>Social</h3>
+        <ul class="socials">
+          <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left"><p>&copy; 2025 Vasanth Kumar</p></div>
+      <div class="footer-right"><ul class="socials"><li><a href="#" target="_blank" rel="noopener">GitHub</a></li><li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+    </div>
+  </footer>
+
+<script>
+  // mobile nav toggle for contact page
+  const btnc = document.querySelectorAll('.nav-toggle')[2];
+  const navc = document.getElementById('mainNavContact');
+  btnc.addEventListener('click', () => {
+    const expanded = btnc.getAttribute('aria-expanded') === 'true' || false;
+    btnc.setAttribute('aria-expanded', !expanded);
+    navc.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

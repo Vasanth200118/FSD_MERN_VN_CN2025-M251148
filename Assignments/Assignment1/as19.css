@@ -1,0 +1,39 @@
+/* Base Style */
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background: #060053;
+}
+
+.nav ul li {
+  padding: 15px 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Mobile: Vertical menu (≤768px) */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    background: #060053; /* Mobile color */
+  }
+}
+
+/* Medium screens (768px–1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav ul {
+    background: #060053; /* Medium breakpoint color change */
+  }
+}
+
+/* Desktop (>768px): Horizontal menu */
+@media (min-width: 769px) {
+  .nav ul {
+    flex-direction: row;
+  }
+}

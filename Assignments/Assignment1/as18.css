@@ -1,0 +1,44 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* 1/4 | 2/4 | 1/4 */
+  grid-template-rows: auto 1fr auto;  /* Header | Content | Footer */
+  gap: 10px;
+  height: 100vh;
+}
+
+/* Full-width Header */
+.header {
+  grid-column: 1 / 4;   /* spans all columns */
+  background: #4CAF50;
+  padding: 20px;
+  color: white;
+}
+
+/* Sidebar (left column) */
+.sidebar {
+  grid-column: 1 / 2;
+  background: #ddd;
+  padding: 20px;
+}
+
+/* Main content (middle column) */
+.main {
+  grid-column: 2 / 3;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+/* Widget panel (right column) */
+.widgets {
+  grid-column: 3 / 4;
+  background: #ddd;
+  padding: 20px;
+}
+
+/* Full-width Footer */
+.footer {
+  grid-column: 1 / 4;
+  background: #333;
+  padding: 20px;
+  color: white;
+}

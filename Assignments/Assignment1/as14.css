@@ -1,0 +1,9 @@
+.sidebar-fixed {
+    width: 200px;
+    background: #5c2750;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+}

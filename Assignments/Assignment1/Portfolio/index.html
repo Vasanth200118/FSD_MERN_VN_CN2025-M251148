@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vasanth Kumar — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Vasanth<span class="dot">.</span></a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-controls="mainNav" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>Vasanth Kumar</h1>
+        <p class="tagline">Frontend developer • HTML & CSS enthusiast</p>
+        <p>I graduated with a B.E. in CSE (2023) from Jaya Sakthi Engineering College. I build clean UI with HTML & CSS and enjoy crafting responsive layouts.</p>
+        <p class="cta-row">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn ghost" href="contact.html">Contact Me</a>
+        </p>
+      </div>
+      <figure class="hero-figure" aria-hidden="true">
+        <img src="photo.jpg" alt="Photo of Vasanth Kumar">
+      </figure>
+    </section>
+
+    <!-- About -->
+    <section class="about container" id="about">
+      <h2>About Me</h2>
+      <p>I'm a recent B.E. CSE graduate (2023) with hands-on experience in building responsive websites using semantic HTML5 and modern CSS techniques like Flexbox and Grid. I enjoy learning new UI patterns and improving accessibility.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">Flexbox & Grid</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">MS Office</div>
+      </div>
+    </section>
+
+    <!-- Education / Experience -->
+    <section class="edu container">
+      <h2>Education</h2>
+      <div class="edu-table-wrap">
+        <table class="edu-table">
+          <thead>
+            <tr>
+              <th>Sethu Bhhaskara Mat Hr sec School</th>
+              <th>HSC</th>
+              <th>2019</th>
+              <th>65%</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jaya Sakthi Engineering College</td>
+              <td>B.E. Computer Science & Engineering</td>
+              <td>2023</td>
+              <td>8.3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; 2025 Vasanth Kumar</p>
+      </div>
+      <div class="footer-right">
+        <nav>
+          <ul class="socials">
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  // Mobile nav toggle (small script, no external libraries)
+  const btn = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('mainNav');
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
+    btn.setAttribute('aria-expanded', !expanded);
+    nav.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

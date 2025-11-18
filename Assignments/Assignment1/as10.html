@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards in CSS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+        <img src="https://picsum.photos/id/0/367/267" alt="Card Image">
+  
+        <h2 class="card-title">Card Title</h2>
+  
+        <p class="card-description">
+            This is a simple card component demonstrating layout using 
+            background colors, borders, and padding.
+        </p>
+
+        <button class="card-btn">Learn More</button>
+    </div>
+    <div class="card">
+        <img src="https://picsum.photos/id/0/367/267" alt="Card Image">
+  
+        <h2 class="card-title">Card Title</h2>
+  
+        <p class="card-description">
+            This is a simple card component demonstrating layout using 
+            background colors, borders, and padding.
+        </p>
+
+        <button class="card-btn">Learn More</button>
+    </div>
+    <div class="card">
+        <img src="https://picsum.photos/id/0/367/267" alt="Card Image">
+  
+        <h2 class="card-title">Card Title</h2>
+  
+        <p class="card-description">
+            This is a simple card component demonstrating layout using 
+            background colors, borders, and padding.
+        </p>
+
+        <button class="card-btn">Learn More</button>
+    </div>
+    </div>
+</body>
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card {
+    width: 300px;
+    height: 400px;
+    background-color: #22194b;
+    border: 1px solid #7c1856;
+    border-radius: 10px;
+    overflow: hidden;               /* Makes image edges rounded */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 15px;
+    color: wheat;
+    font-weight: bold;
+}
+
+.card-description {
+    margin: 0 15px 20px 15px;
+    color: #f0f0f0;
+    font-size: 14px;
+}
+
+.card-btn {
+    background-color: #001301;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 0 15px 20px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+</style>
+</html>

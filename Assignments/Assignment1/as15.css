@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* All boxes */
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Static */
+.static {
+    background: #ffe5cc;
+}
+
+/* Relative */
+.relative {
+    position: relative;
+    background: #ccffe6;
+    left: 20px;
+    top: 20px;
+}
+
+/* Absolute (inside wrapper) */
+.absolute-wrapper {
+    width: 200px;
+    height: 200px;
+    background: #f0f0ff;
+    position: relative;
+    border: 2px dashed #666;
+    margin-bottom: 40px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #ccd9ff;
+}
+
+/* Fixed */
+.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #ffcccc;
+}
